@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <title>Instrucciones</title>
+</head>
+<body>
+    <div class="navbar">
+        <a href="/">Inicio</a>
+        <a href="/instrucciones">Instrucciones</a>
+        <a href="/contacto">Contacto</a>
+    </div>
+    <div class="container">
+        <h1>Instrucciones</h1>
+        <p>Sigue estos pasos para utilizar la aplicación:</p>
+        <ol>
+            <li>Ingresa los valores de <b>Suministros</b>, separados por comas.</li>
+            <li>Ingresa los valores de <b>Demandas</b>, separados por comas.</li>
+            <li>Llena la <b>Matriz de Costos</b> en formato de filas separadas por saltos de línea.</li>
+            <li>Selecciona el método deseado.</li>
+            <li>Presiona <b>Resolver</b> para obtener los resultados.</li>
+        </ol>
+    </div>
+    <footer>© 2024 Express. Todos los derechos reservados.</footer>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <title>Modelo de Transporte</title>
+</head>
+<body>
+    <div class="navbar">
+        <h1>Express 2.0</h1>
+        <div class="menu">
+            <button class="menu-button">Menú</button>
+            <div class="menu-dropdown">
+                <a href="#">Inicio</a>
+                <a href="#">Instrucciones</a>
+                <a href="#">Contacto</a>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <form id="transport-form">
+            <label for="supply">Suministros:</label>
+            <textarea id="supply" name="supply" placeholder="Ejemplo: 20,30,40"></textarea>
+            
+            <label for="demand">Demandas:</label>
+            <textarea id="demand" name="demand" placeholder="Ejemplo: 25,35,30"></textarea>
+            
+            <label for="costs">Matriz de Costos:</label>
+            <textarea id="costs" name="costs" placeholder="Ejemplo (separado por líneas):&#10;8,6,10&#10;9,12,7&#10;14,9,11"></textarea>
+            
+            <button type="submit">Resolver</button>
+        </form>
+        <div id="results"></div>
+    </div>
+    <div class="footer">© 2024 Express. Todos los derechos reservados.</div>
+    <script src="{{ url_for('static', filename='js/app.js') }}"></script>
+</body>
+</html>
